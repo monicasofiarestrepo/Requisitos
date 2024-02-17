@@ -1,0 +1,8 @@
+Errores no funcionales de la página:
+
+- Hay dos botones que tienen la misma función, no tiene sentido y es redundante para el usuario.
+- A pesar de que dice que ponga un número entre 1 y 120, acepta numeros fuera del rango
+- Con las flechitas solo se puede llegar a 99
+- El botón de Comenzar de nuevo y de Envíalo Ahora no hacen nada
+- El botón de Comenzar de Nuevo estaba disabled
+- Inicialmente, la función para generar el número máximo estaba pasada del límite por 20 numeros

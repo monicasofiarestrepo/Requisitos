@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="./img/icon2.png"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Sixtyfour&display=swap" rel="stylesheet">
+
+    <title>Calculadora IMC</title>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img src="img/sportacusNormal.jpg" id="imagen" alt="Imagen 1">
+            <div class="formulario">
+                <form id="form">
+                    <h1>Calcula tu IMC</h1>
+                    <label for="unidad">Selecciona la Unidad</label>
+                    <select id="unidad">
+                        <option value="metrico"> Sistema Métrico (kg/cm)</option>
+                        <option value="imperial">Sistema Imperial (lb/in)</option>
+                    </select>
+                    <label for="peso">Peso</label>
+                    <input type="number" placeholder="Escriba su peso" id="peso">
+                    <label for="altura">Altura</label>
+                    <input type="number" placeholder="Escriba su altura" id="altura">
+                    <input type="submit" value="Calcular IMC" id="button">
+
+                    <div class="result" id="resultado">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="explanation">
+            <p>El Índice de Masa Corporal (IMC) es una medida que se calcula dividiendo el peso de una persona en kilogramos por el cuadrado de su altura en metros. El IMC es una herramienta útil para determinar si una persona tiene un peso saludable en relación con su altura. Sin embargo, ignora el porcentaje de grasa y masa muscular, por lo que en muchos casos es necesario consultar con un experto.</p>
+            <div class="text-image">
+                <h1>¿Cómo puede afectarme mi IMC?</h1>
+                <img src="img/CUADRO-IMC.png" alt="Imagen 2">
+            </div>
+
+    </section>
+</body>
+</html>
