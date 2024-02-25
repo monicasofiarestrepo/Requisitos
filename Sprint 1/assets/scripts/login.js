@@ -1,12 +1,13 @@
-//Ejecutando funciones
+//Ejecutando funcione
+document.getElementById("btn__registrarse").addEventListener("click", function() {
+    window.location.href ="../pages/registro.html";
+});
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
 document.getElementById("btn__historial").addEventListener("click", historial);
 window.addEventListener("resize", anchoPage);
 
-document.getElementById("btn__registrarse").addEventListener("click", function() {
-    window.location.href = "../../registro.html";
-});
+
 
 //Declarando variables
 var formulario_login = document.querySelector(".formulario__login");
