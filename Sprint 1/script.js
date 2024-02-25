@@ -53,7 +53,7 @@ function mostrarIMC(imc){
         resultado = "Obesidad tipo 2";
         cambiarImagen("img/snorlax.png");
     } else if (imc >= 35 && imc <= 39.9) {
-        resultado = "Obesidad tipo 1";
+        resultado = "Obesidad tipo 3";
         cambiarImagen("img/snorlax.png");
     } else {
         resultado = "Obesidad mórbida";
