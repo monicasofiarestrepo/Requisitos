@@ -1,5 +1,4 @@
 function calcularIMC(event) {
-    event.preventDefault();
     var peso = parseFloat(document.getElementById("peso").value);
     var altura = parseFloat(document.getElementById("altura").value);
     var unidad = document.getElementById("unidad").value;

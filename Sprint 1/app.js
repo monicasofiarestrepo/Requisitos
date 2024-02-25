@@ -26,8 +26,6 @@ app.post('/submit-data', (req, res) => {
     };
     historial.push(data);
     console.log(data);
-    
-    // res.status(200).send('Datos recibidos');
     res.redirect('/');
 });
 
