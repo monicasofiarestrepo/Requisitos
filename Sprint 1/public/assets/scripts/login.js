@@ -1,6 +1,6 @@
 //Ejecutando funcione
 document.getElementById("btn__registrarse").addEventListener("click", function() {
-    window.location.href ="../pages/registro.html";
+    window.location.href ="/registro";
 });
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);

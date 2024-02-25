@@ -19,6 +19,10 @@ app.get('/calculadora', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/assets/pages/calculadora.html'));
 });
 
+app.get('/registro', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/assets/pages/registro.html'));
+})
+
 app.post('/submit-data', (req, res) => {
     console.log("inicio");
     // Procese los datos del formulario aquí
