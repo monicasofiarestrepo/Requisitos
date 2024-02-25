@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="icon" href="./img/icon2.png"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,30 +12,38 @@
 
     <title>Calculadora IMC</title>
 
-    <script src="script.js" defer></script>
+    <script src="./public/script.js" defer></script>
 </head>
 <body>
     <section>
         <div class="container">
             <img src="img/sportacusNormal.jpg" id="imagen" alt="Imagen 1">
             <div class="formulario">
-                <form id="form">
-                    <h1>Calcula tu IMC - Solo para mayores de 18 años</h1>
+                <a href="/historial">historial</a>
+                <form id="form" method="POST" action="/submit-data">
+                    <!-- <h1>Calcula tu IMC - Solo para mayores de 18 años</h1> -->
                     <label for="unidad">Selecciona la Unidad</label>
-                    <select id="unidad">
+                    <select id="unidad" name="unidad">
                         <option value="metrico"> Sistema Métrico (kg/cm)</option>
                         <option value="imperial">Sistema Imperial (lb/in)</option>
                     </select>
                     <label for="peso">Peso</label>
-                    <input type="number" placeholder="Escriba su peso" id="peso">
+                    <input type="number" placeholder="Escriba su peso" id="peso" name="peso">
                     <label for="altura">Altura</label>
-                    <input type="number" placeholder="Escriba su altura" id="altura">
-                    <input type="submit" value="Calcular IMC" id="button">
+                    <input type="number" placeholder="Escriba su altura" id="altura" name="altura">
+                    <button type="submit" id="button">Calcular IMC</button>
 
                     <div class="result" id="resultado">
                         
                     </div>
                 </form>
+                <!-- <form action="/submit-data" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                  </form> -->
             </div>
         </div>
         <div class="explanation">
