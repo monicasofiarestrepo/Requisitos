@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; 
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #46A2FD;
+    text-align: center;
+}
+
+.container-histoimc {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-registros {
+    background-color: rgba(0, 128, 255, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#lista-registros {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-registros li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    color: #003f7e;
+}
