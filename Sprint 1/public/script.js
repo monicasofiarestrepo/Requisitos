@@ -1,4 +1,6 @@
-function calcularIMC(event) {
+async function calcularIMC(event) {
+    event.preventDefault();
+
     var peso = parseFloat(document.getElementById("peso").value);
     var altura = parseFloat(document.getElementById("altura").value);
     var unidad = document.getElementById("unidad").value;
@@ -19,6 +21,26 @@ function calcularIMC(event) {
     } else {
         document.getElementById("resultado").innerText = "Por favor, ingresa un peso y una altura válidos.";
     }
+
+    let body = JSON.stringify({
+        // peso: document.getElementById("peso").value,
+        peso: "61",
+        // altura: document.getElementById("altura").value,
+        altura: "160",
+    })
+
+
+    fetch('http://localhost:3000/submit-data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            peso: document.getElementById("peso").value,
+            altura: document.getElementById("altura").value,
+            imc: imc.toFixed(2),
+        }),
+    })
 }
 document.getElementById("peso").addEventListener("keypress", function(event) {
     if (event.key === 'Enter') {
@@ -27,6 +49,7 @@ document.getElementById("peso").addEventListener("keypress", function(event) {
 });
 
 document.getElementById("form").addEventListener("submit", calcularIMC);
+
 
 function cambiarImagen(img_src) {
     document.getElementById("imagen").src = img_src;
