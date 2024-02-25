@@ -12,9 +12,12 @@ app.use(bodyParser.urlencoded({ extended: true })); // parse URL-encoded data
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/assets/pages/calculadora.html'));
+    res.sendFile(path.join(__dirname, 'public/assets/pages/main.html'));
 });
 
+app.get('/calculadora', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/assets/pages/calculadora.html'));
+});
 
 app.post('/submit-data', (req, res) => {
     console.log("inicio");
