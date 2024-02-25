@@ -20,7 +20,19 @@ function calcularIMC(event) {
     } else {
         document.getElementById("resultado").innerText = "Por favor, ingresa un peso y una altura válidos.";
     }
+    fetch('http://localhost:3000/submit-data', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+        peso: document.getElementById("peso").value,
+        altura: document.getElementById("altura").value,
+        imc: imc.toFixed(2),
+    }),
+})
 }
+
 document.getElementById("peso").addEventListener("keypress", function(event) {
     if (event.key === 'Enter') {
         calcularIMC(event);

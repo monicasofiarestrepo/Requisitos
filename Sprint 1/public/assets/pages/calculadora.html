@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estiloCalculadora.css">
+    <link rel="stylesheet" href="./assets/css/estiloCalculadora.css">
     <link rel="icon" type="icon" href="../../img/icon2.png"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +12,13 @@
 
     <title>Calculadora IMC</title>
 
-    <script src="../scripts/calculadora.js" defer></script>
 </head>
 <body>
     <section>
         <div class="container">
             <img src="../../img/sportacusNormal.jpg" id="imagen" alt="Imagen 1">
             <div class="formulario">
+                <a href="/historial">historial</a>
                 <form id="form">
                     <h1>Calcula tu IMC - Solo para mayores de 18 años</h1>
                     <label for="unidad">Selecciona la Unidad</label>
@@ -30,7 +30,8 @@
                     <input type="number" placeholder="Escriba su peso" id="peso">
                     <label for="altura">Altura</label>
                     <input type="number" placeholder="Escriba su altura" id="altura">
-                    <input type="submit" value="Calcular IMC" id="button">
+                    <!-- <input type="submit" value="Calcular IMC" id="button"> -->
+                    <button type="submit" id="button">Calcular IMC</button>
 
                     <div class="result" id="resultado">
                         
@@ -46,5 +47,7 @@
             </div>
 
     </section>
+    <script src="./assets/scripts/calculadora.js" defer></script>
+
 </body>
 </html>
