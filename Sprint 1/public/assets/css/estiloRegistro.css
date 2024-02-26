@@ -1,7 +1,105 @@
-body{
-    background-color: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-size: cover;
+}
+
+main{
+    width:100%;
+    padding: 20px; 
+    margin:auto;
+    margin-top:100px;
+}
+
+.contenedor_todo{
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    position:relative;
+}
+
+/*Formularios*/
+.contenedor_login-registro{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    left:15px;
+    flex-direction: column;
+    margin:auto;
+    padding: 20px;
     box-sizing: border-box;
+}
+/*creo el contenedor de formulario*/
+.contenedor_login-registro form{
+    width: 100%;
+    padding:20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor_login-registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#46A2FD;
+}
+
+.contenedor_login-registro form input{
+    width: 100%;
+    margin-top:20px;
+    padding:10px;
+    border: none;
+    background:#F2F2F2;  
+    font-size: 15px;
+    outline: none;  
+}
+
+.contenedor_login-registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 13px;
+    background: #46A2FD;
+    color:white;
+    cursor: pointer;
+}
+
+.formulario_registro{
+    display:block;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width:850px){
+    main{ margin-top:50px;}
+    .caja_trasera{max-width: 350px;
+    height:300px;
+    flex-direction: column;
+    margin: auto;
+    }
+
+    .caja_trasera div{
+        margin:0px;
+        position:absolute;
+    }
+
+    /*Formulario*/
+    .contenedor_login-registro{
+        top:-10px;
+        left: -5px;
+        margin:auto;
+    }
+
+    .contenedor_login-registro form{
+        position: relative;
+    }
 }
