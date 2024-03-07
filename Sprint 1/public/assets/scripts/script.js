@@ -1,8 +1,7 @@
-const axiosInstance = require('./axiosInterceptor');
+import axiosInstance from './axiosInterceptor.js';
 
-
-alert(message="prueba")
 console.log("prueba")
-axiosInstance.get("/historial",(response) => {
-    alert(response)
-})
+axiosInstance.get("/historial")
+.then((response) => {
+    console.log("response data:", response.data);
+});

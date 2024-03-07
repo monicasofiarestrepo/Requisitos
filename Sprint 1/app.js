@@ -9,13 +9,7 @@ const app = express();
 app.use(bodyParser.json()); // parse application/json
 app.use(bodyParser.urlencoded({ extended: true })); // parse URL-encoded data
 // app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static('public', { // 'public' es el directorio donde están tus archivos estáticos
-    setHeaders: (res, path, stat) => {
-      if (path.endsWith('.js')) {
-        res.set('Content-Type', 'application/javascript');
-      }
-    },
-  }));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/assets/pages/main.html'));
