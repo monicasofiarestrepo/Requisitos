@@ -1,6 +1,6 @@
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000', // URL base de tu API
+  baseURL: 'http://localhost:3000', 
 });
 
 // Interceptor para las solicitudes
